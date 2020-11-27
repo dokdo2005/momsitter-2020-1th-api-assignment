@@ -1,0 +1,19 @@
+{
+  "name": "momsitter-2020-1th-api-assignment",
+  "version": "1.0.0",
+  "description": "맘시터 백엔드 개발 직무에 지원해주셔서 감사합니다. 본 과제를 통해 향후 맘시터의 동료로서 서비스를 더 잘 이해하고, 맘시터 서비스 개발 업무를 미리 생각해볼 수 있는 좋은 기회가 되기를 희망합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dokdo2005/momsitter-2020-1th-api-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dokdo2005/momsitter-2020-1th-api-assignment/issues"
+  },
+  "homepage": "https://github.com/dokdo2005/momsitter-2020-1th-api-assignment#readme"
+}

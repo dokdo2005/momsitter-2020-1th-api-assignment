@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dokdo2005/momsitter-2020-1th-api-assignment#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
   }
 }

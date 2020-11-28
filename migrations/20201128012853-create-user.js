@@ -29,6 +29,9 @@ module.exports = {
       isParentMember: {
         type: Sequelize.BOOLEAN
       },
+      isSitterMember: {
+        type: Sequelize.BOOLEAN
+      },
       careAgeStart: {
         type: Sequelize.INTEGER
       },

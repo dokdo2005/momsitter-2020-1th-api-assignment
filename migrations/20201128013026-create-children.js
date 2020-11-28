@@ -11,9 +11,6 @@ module.exports = {
       parentId: {
         type: Sequelize.INTEGER
       },
-      childName: {
-        type: Sequelize.STRING
-      },
       birthDate: {
         type: Sequelize.STRING
       },

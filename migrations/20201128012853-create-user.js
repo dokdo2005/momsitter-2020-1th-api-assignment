@@ -35,7 +35,10 @@ module.exports = {
       careAgeEnd: {
         type: Sequelize.INTEGER
       },
-      description: {
+      sitterDesc: {
+        type: Sequelize.STRING
+      },
+      parentDesc: {
         type: Sequelize.STRING
       }
     });

@@ -23,7 +23,8 @@ module.exports = (sequelize, DataTypes) => {
     isParentMember: DataTypes.BOOLEAN,
     careAgeStart: DataTypes.INTEGER,
     careAgeEnd: DataTypes.INTEGER,
-    description: DataTypes.STRING
+    sitterDesc: DataTypes.STRING,
+    parentDesc: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'User',

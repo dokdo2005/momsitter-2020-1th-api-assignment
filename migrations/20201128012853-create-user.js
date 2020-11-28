@@ -26,7 +26,7 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
-      isSitterMember: {
+      isParentMember: {
         type: Sequelize.BOOLEAN
       },
       careAgeStart: {

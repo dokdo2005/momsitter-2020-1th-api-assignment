@@ -1,5 +1,4 @@
 const users = require("../models").User;
-const childrenTable = require("../models").children;
 const jwt = require("jsonwebtoken");
 
 module.exports = {
@@ -17,19 +16,14 @@ module.exports = {
                                 id: decoded.userNum
                             }
                         });
-                        if (userData.isParentMember === true) {
-                            res.status(409).send({ result: "Already a parent member" });
+                        if (userData.isSitterMember === true) {
+                            res.status(409).send({ result: "Already a sitter member" });
                         } else {
-                            for (let i in req.body.children) {
-                                await childrenTable.create({
-                                    parentId: decoded.userNum,
-                                    birthDate: req.body.children[i].birthDate,
-                                    gender: req.body.children[i].gender
-                                });
-                            }
                             await users.update({
-                                isParentMember: true,
-                                parentDesc: req.body.description
+                                isSitterMember: true,
+                                careAgeStart: req.body.careAgeStart,
+                                careAgeEnd: req.body.careAgeEnd,
+                                sitterDesc: req.body.description
                             }, {
                                 where: {
                                     id: decoded.userNum

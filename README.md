@@ -1,19 +1,19 @@
 # momsitter-2020-1th-api-assignment
 
-# 서버 실행
+## 서버 실행
 
 터미널에서 `npm start` 명령어로 API 서버를 시작할 수 있습니다.
 
-# DB Schema
+## DB Schema
 
 ![https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46663edd-a90f-4b60-9411-bf8d99910415/momsitter.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201129%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201129T041803Z&X-Amz-Expires=86400&X-Amz-Signature=39700b6f2875969946d64033997d04cab12710be134f696fbb716e767ce9296e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22momsitter.png%22](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46663edd-a90f-4b60-9411-bf8d99910415/momsitter.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201129%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201129T041803Z&X-Amz-Expires=86400&X-Amz-Signature=39700b6f2875969946d64033997d04cab12710be134f696fbb716e767ce9296e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22momsitter.png%22)
 
 1. `config/config_example.json`을 `config.json`으로 바꾼 후 본인의 환경에 맞춰 설정 파일을 수정합니다. (사전에 데이터베이스 생성 필요)
 2. 터미널에서 `npx sequelize-cli db:migrate`로 DB Migration을 하면 DB 테이블이 데이터베이스에 세팅됩니다.
 
-# API Specification
+## API Specification
 
-## 회원가입
+### 회원가입
 
 - 주소 : /signup
 - Method : POST
@@ -96,7 +96,7 @@
     }
     ```
 
-## 로그인
+### 로그인
 
 - 주소 : /signin
 - Method : POST
@@ -151,7 +151,7 @@
     }
     ```
 
-## 부모 회원 전환
+### 부모 회원 전환
 
 - 주소 : /to-parent-member
 - Method : PATCH
@@ -220,7 +220,7 @@
     }
     ```
 
-## 시터 회원 전환
+### 시터 회원 전환
 
 - 주소 : /to-sitter-member
 - Method : PATCH
@@ -284,7 +284,7 @@
     }
     ```
 
-## 내 정보 보기
+### 내 정보 보기
 
 - 주소 : /get-my-info
 - Method : GET
@@ -349,7 +349,7 @@
     }
     ```
 
-## 내 정보 업데이트
+### 내 정보 업데이트
 
 - 주소 : /update-my-info
 - Method : PUT
@@ -449,7 +449,7 @@
     }
     ```
 
-# 사용 라이브러리/프레임워크
+## 사용 라이브러리/프레임워크
 
 - Node.js
 - ExpressJS

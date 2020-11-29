@@ -9,6 +9,7 @@ const userSignUp = require('./controllers/signup').post;
 const toParentMember = require('./controllers/toParentMember').patch;
 const toSitterMember = require('./controllers/toSitterMember').patch;
 const getMyInfo = require('./controllers/getMyInfo').get;
+const updateMyInfo = require('./controllers/updateMyInfo').put;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,6 +23,7 @@ app.post('/signup', userSignUp);
 app.patch('/to-parent-member', toParentMember);
 app.patch('/to-sitter-member', toSitterMember);
 app.get('/get-my-info', getMyInfo);
+app.put('/update-my-info', updateMyInfo);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

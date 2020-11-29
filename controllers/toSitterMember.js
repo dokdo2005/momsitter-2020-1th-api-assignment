@@ -8,7 +8,7 @@ module.exports = {
             let token = tokenString.substring(7);
             jwt.verify(token, 'momsitter', async (err, decoded) => {
                 if (err) {
-                    res.status(404).send({ result: "User does not exist" });
+                    res.status(400).send({ result: "Login error" });
                 } else {
                     try {
                         let userData = await users.findOne({

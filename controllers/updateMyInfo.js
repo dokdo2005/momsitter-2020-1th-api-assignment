@@ -10,7 +10,7 @@ module.exports = {
             let token = tokenString.substring(7);
             jwt.verify(token, 'momsitter', async (err, decoded) => {
                 if (err) {
-                    res.status(404).send({ result: "User does not exist" });
+                    res.status(400).send({ result: "Login error" });
                 } else {
                     let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{7,}$/;    // 7자 이상, 영문 대소문자 및 숫자, 특수기호 포함
                     if (req.body.password.match(regex)) {

@@ -53,7 +53,7 @@
       "careAgeStart": null,
       "careAgeEnd": null,
       "children": [
-    	{
+    	  {
           "birthDate": "20190513",
           "gender": 0     // 남자는 0, 여자는 1
         },
@@ -168,7 +168,7 @@
     ```jsx
     {
     	"children": [
-    	  {
+    	    {
             "birthDate": "20190513",
             "gender": 0     // 남자는 0, 여자는 1
           },
@@ -312,9 +312,9 @@
       "careAgeStart": null,
       "careAgeEnd": null,
       "children": [
-    	{
-    	  "id": 1,
-    	  "parentId": 1,
+    	  {
+    	    "id": 1,
+    	    "parentId": 1,
           "birthDate": "20190513",
           "gender": 0     // 남자는 0, 여자는 1
         },
@@ -394,8 +394,8 @@
         "careAgeStart": null,
         "careAgeEnd": null,
         "children": [
-      	{
-      	  "id": 1,
+      	  {
+      	    "id": 1,
             "birthDate": "20190513",
             "gender": 0     // 남자는 0, 여자는 1
           },

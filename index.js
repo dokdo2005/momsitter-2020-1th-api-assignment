@@ -5,7 +5,7 @@ const port = 3000;
 const bodyParser = require('body-parser');
 
 const userLogin = require('./controllers/signin').post;
-const userSignUp = require('./controllers/signup').post;
+const userSignUp = require('./controllers/signup');
 const toParentMember = require('./controllers/toParentMember').patch;
 const toSitterMember = require('./controllers/toSitterMember').patch;
 const getMyInfo = require('./controllers/getMyInfo').get;
@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/signin', userLogin);
-app.post('/signup', userSignUp);
+app.post('/sitter-signup', userSignUp.sitter);
+app.post('/parent-signup', userSignUp.parent);
 app.patch('/to-parent-member', toParentMember);
 app.patch('/to-sitter-member', toSitterMember);
 app.get('/get-my-info', getMyInfo);
